@@ -33,8 +33,8 @@ Referências:
 ```
 
 ### Iniciando no React
-Ferramenta: creat-react-app
-Comando: sudo yarn create react-app talktome --template typescript
+- Ferramenta: creat-react-app
+- Comando: sudo yarn create react-app talktome --template typescript
 
 
 ## <a name="firebase"></a>Firebase
