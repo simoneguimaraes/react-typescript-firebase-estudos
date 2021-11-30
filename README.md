@@ -4,9 +4,17 @@
 
 ## ReactJs
 ### Biblioteca JavaScript para criar interfaces de usuário em aplicações front-end.
+Com duas aplicações, é possível distribuir as responsabilidades: 
 
-- Servidor (back-end): Node.js, python, ...
-- Browser (front-end): vai conter todo o HTML, CSS e JS
+#### Aplicação 1: Servidor (back-end)
+- Tecnologias: Node.js, python, ...
+- Vai lidar com as regras de negócio, autenticação, banco de dados - parte funcional da aplicação
+
+#### Aplicação 2: Browser (front-end)
+- Tecnologias: React, Angular, Vue
+- Contém todo o HTML, CSS e JS
+- Vai interagir com o servidor, buscar dados - transformar a estrutura de dados em visualização
+
 
 ### SPA (Single Page Application)
 
