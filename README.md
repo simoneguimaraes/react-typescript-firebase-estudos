@@ -72,4 +72,7 @@ showWelcomeMessage({
   }
 }) 
 ```
-
+## <a name="projeto"></a>Projeto
+- O arquivo package.json indica quais são as dependências do projeto. São os códigos de terceiros que acoplamos ao nosso código.
+- 
+- 
