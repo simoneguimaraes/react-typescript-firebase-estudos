@@ -32,9 +32,15 @@ Referências:
 [{ nome: 'Lucas Lima', idade: 28, cidade: 'São Paulo'}]
 ```
 
+#### A SPA é o index.html
+- É a pagina que recebe todas as informações.
+- A interface da aplicação vai ser construída no Javascript.
+- 
 ### Iniciando no React
 - Ferramenta: creat-react-app
 - Comando: sudo yarn create react-app talktome --template typescript
+
+
 
 ## <a name="firebase"></a>Firebase
 ### Backend as a Service do Google
