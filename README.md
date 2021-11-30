@@ -31,9 +31,16 @@ Referências:
 ```
 [{ nome: 'Diego Lima', idade: 26, cidade: 'São Paulo'}]
 ```
+
+### Iniciando no React
+Ferramenta: creat-react-app
+Comando: sudo yarn create react-app talktome --template typescript
+
+
 ## <a name="firebase"></a>Firebase
 ### Backend as a Service do Google
-Fornecer funcionalidades como: autenticação, banco de dados
+Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco de dados
+
 
 
 
