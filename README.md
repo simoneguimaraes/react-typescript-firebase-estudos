@@ -4,7 +4,8 @@
 
 ## ReactJs
 ### Biblioteca JavaScript para criar interfaces de usuário em aplicações front-end.
-Com duas aplicações, é possível distribuir as responsabilidades: 
+- Exemplos de Aplicações que usam React: Notion, Figma
+- Com duas aplicações, é possível distribuir as responsabilidades: 
 
 #### Aplicação 1: Servidor (back-end)
 - Tecnologias: Node.js, python, ...
@@ -14,6 +15,7 @@ Com duas aplicações, é possível distribuir as responsabilidades:
 - Tecnologias: React, Angular, Vue
 - Contém todo o HTML, CSS e JS
 - Vai interagir com o servidor, buscar dados - transformar a estrutura de dados em visualização
+
 
 
 ### SPA (Single Page Application)
