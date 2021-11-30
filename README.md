@@ -16,8 +16,6 @@
 - Contém todo o HTML, CSS e JS
 - Vai interagir com o servidor, buscar dados - transformar a estrutura de dados em visualização
 
-
-
 ### SPA (Single Page Application)
 
 - Na versão tradicional, voce precisava retornar todo o HTML com os dados dos contatos, por exemplo (50 KB)
@@ -27,5 +25,9 @@
 ```
 [{ nome: 'Diego Lima', idade: 26, cidade: 'São Paulo'}]
 ```
+## Firebase
+### Backend as a Service do Google
+Fornecer funcionalidades como: autenticação, banco de dados
+
 
 
