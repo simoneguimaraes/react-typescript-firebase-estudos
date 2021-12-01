@@ -123,10 +123,25 @@ export function Button(props: ButtonProps) {
 - Estado é uma informação mantida por um componente do React
 - Quando a informação nao permenece com o mesmo valor durante todo o uso da aplicação, essa informação é mantida no Estado
 - Essa informação vai ter o seu valor alterado pelo uso do usuário na aplicação 
-- Ex: clicar no botão e a informaçao vai aumentar o valor (contador). Essa informação será mantida no Estado
+- No React, as palavras são usadas em camelCase `<button onClick={}></button>`
+- As chaves {} indicam que voce está colocando uma variável que foi definida em cima, como uma propriedade ou como um conteúdo.
 
-- No React, as palavras são usadas em camelCase 
-Ex: <button onClick={}></button>
+#### Exemplo: Contador
+Clicar no botão e a informaçao vai aumentar o valor (contador). Essa informação será mantida no Estado
+```
+export function Button() {
+  let counter = 0;
+  function increment(){
+    counter += 1
+  }
+  
+  return (
+    <button onClick={increment}>{counter}</button>
+  )
+}
+```
+- O React consegue perceber que uma informação mudou para, então, ele mostrar essa nova informação em tela. Essa informação precisa ser um Estado.
+
 
 
 ### SPA (Single Page Application)
