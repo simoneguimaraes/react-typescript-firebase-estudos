@@ -7,6 +7,7 @@
 - [Named Export](#named-export)
 - [Propriedade](#propriedade)
 - [Estado](#estado)
+- [Imutabilidade](#imutabilidade)
 - [SPA (Single Page Application)](#spa)
 - [TypeScript](#typescript)
 - [Firebase](#firebase)
@@ -31,20 +32,6 @@
 - No React, tudo é componente
 - Deixa a aplicação mais simples e fácil do usuário utilizar
 - A Aplicação React (App) também é um compontene
-
-### <a name="named-export"></a>Named Export 
-(ao invés de Export Default)
-```
-export function Button() {
-  return (
-    <button>Clique Aqui</button>
-  )
-}
-```
-Caso voce altere o nome do componente de 'Button' para 'OutlineButton', a importação no App vai dar erro, o que ajuda a prevenir bugs. 
-```
-import { OutlineButton } from './components/OutlineButton'
-```
 
 ### <a name="propriedade"></a>Propriedade
 - A propriedade no JSX funciona como o atributo no HTML.
@@ -153,9 +140,24 @@ export function Button() {
   )
 }
 ```
+### <a name="imutabilidade"></a>Imutabilidade
+- A partir do momento que uma variavel foi criada dentro do Estado de um componente, ela não sofre alterações.
+- `setCounter(counter + 1)`
+- É preciso criar uma nova informação com base na informação que a gente já tinha. 
 
-
-
+### <a name="named-export"></a>Named Export 
+(ao invés de Export Default)
+```
+export function Button() {
+  return (
+    <button>Clique Aqui</button>
+  )
+}
+```
+Caso voce altere o nome do componente de 'Button' para 'OutlineButton', a importação no App vai dar erro, o que ajuda a prevenir bugs. 
+```
+import { OutlineButton } from './components/OutlineButton'
+```
 
 ### <a name="spa"></a>SPA (Single Page Application)
 
