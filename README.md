@@ -67,7 +67,57 @@ export function Button(props: ButtonProps) {
   )
 }
 ```
-
+#### As propriedades (diferentemente dos atributos do HTML) podem receber qualquer tipo de informação do Javascript.
+- Number:
+```
+function App() {
+  return (
+    <div>
+      <Button text={1} />
+    </div>
+  )
+}
+```
+```
+type ButtonProps = {
+  text: number 
+}
+```
+- Array:
+```
+function App() {
+  return (
+    <div>
+      <Button text={['1', '2']}/>
+    </div>
+  )
+}
+```
+```
+type ButtonProps = {
+  text: Array<string> 
+}
+```
+#### Children
+```
+function App() {
+  return (
+    <div>
+      <Button>Clique Aqui<Button/>
+    </div>
+  )
+}
+```
+```
+type ButtonProps = {
+  children: string
+}
+export function Button(props: ButtonProps) {
+  return (
+    <button>{props.children}</button>
+  )
+}
+```
 ### Estado
 
 
