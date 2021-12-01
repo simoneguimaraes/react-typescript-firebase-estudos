@@ -3,6 +3,11 @@
 Índice
 - [ReactJs](#react)
 - [Conceitos do ReactJs](#conceitos-react)
+- [Componentes](#componentes)
+- [Named Export](#named-export)
+- [Propriedade](#propriedade)
+- [Estado](#estado)
+- [SPA (Single Page Application)](#spa)
 - [TypeScript](#typescript)
 - [Firebase](#firebase)
 
@@ -21,13 +26,14 @@
 - Vai interagir com o servidor, buscar dados - transformar a estrutura de dados em visualização
 
 ## <a name="conceitos-react"></a>Conceitos do ReactJs
-### Componentes
+### <a name="componentes"></a>Componentes
 - Um componente é uma função que devolve um HTML
 - No React, tudo é componente
 - Deixa a aplicação mais simples e fácil do usuário utilizar
 - A Aplicação React (App) também é um compontene
 
-### Named Export (ao invés de Export Default)
+### <a name="named-export"></a>Named Export 
+(ao invés de Export Default)
 ```
 export function Button() {
   return (
@@ -40,7 +46,7 @@ Caso voce altere o nome do componente de 'Button' para 'OutlineButton', a import
 import { OutlineButton } from './components/OutlineButton'
 ```
 
-### Propriedade
+### <a name="propriedade"></a>Propriedade
 - A propriedade no JSX funciona como o atributo no HTML.
 - O texto do botão será inserido por meio da propriedade 'text' no componente:
 ```
@@ -118,7 +124,7 @@ export function Button(props: ButtonProps) {
   )
 }
 ```
-### Estado
+### <a name="estado"></a>Estado
 - Serve para dar vida para a interface, ser manipulável pelo usuário
 - Estado é uma informação mantida por um componente do React
 - Quando a informação nao permenece com o mesmo valor durante todo o uso da aplicação, essa informação é mantida no Estado
@@ -144,7 +150,7 @@ export function Button() {
 
 
 
-### SPA (Single Page Application)
+### <a name="spa"></a>SPA (Single Page Application)
 
 - Na versão tradicional, voce precisava retornar todo o HTML com os dados dos contatos, por exemplo (50 KB)
 
