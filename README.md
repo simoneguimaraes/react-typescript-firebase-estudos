@@ -133,12 +133,19 @@ export function Button(props: ButtonProps) {
 - As chaves {} indicam que voce está colocando uma variável que foi definida em cima, como uma propriedade ou como um conteúdo.
 
 #### Exemplo: Contador
-Clicar no botão e a informaçao vai aumentar o valor (contador). Essa informação será mantida no Estado
+- Clicar no botão e a informaçao vai aumentar o valor (contador). Essa informação será mantida no Estado
+- O React consegue perceber que uma informação mudou para, então, ele mostrar essa nova informação em tela. Essa informação precisa ser um Estado.
+- O colchete do lado esquerdo da equação significa desestruturação da array - `const [counter, setCounter] = useState(0)`
+- O useState retorna uma array com duas posicoes: uma variável (valor do Estado) e uma função (serve para alterar o valor da variável). 
+- Depois de definir a funcao setCounter, ela precisa ser chamada com o novo valor que voce vai entregar - `setCounter(counter + 1)`
 ```
+import { useState } from 'react';
+
 export function Button() {
-  let counter = 0;
+  const [counter, setCounter] = useState(0)
+  
   function increment(){
-    counter += 1
+    setCounter(counter + 1)
   }
   
   return (
@@ -146,7 +153,7 @@ export function Button() {
   )
 }
 ```
-- O React consegue perceber que uma informação mudou para, então, ele mostrar essa nova informação em tela. Essa informação precisa ser um Estado.
+
 
 
 
