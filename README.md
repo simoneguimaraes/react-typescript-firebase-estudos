@@ -119,9 +119,14 @@ export function Button(props: ButtonProps) {
 }
 ```
 ### Estado
+- Serve para dar vida para a interface, ser manipulável pelo usuário
+- Estado é uma informação mantida por um componente do React
+- Quando a informação nao permenece com o mesmo valor durante todo o uso da aplicação, essa informação é mantida no Estado
+- Essa informação vai ter o seu valor alterado pelo uso do usuário na aplicação 
+- Ex: clicar no botão e a informaçao vai aumentar o valor (contador). Essa informação será mantida no Estado
 
-
-
+- No React, as palavras são usadas em camelCase 
+Ex: <button onClick={}></button>
 
 
 ### SPA (Single Page Application)
@@ -182,6 +187,10 @@ Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco
 ## <a name="projeto"></a>Projeto
 - O arquivo package.json indica quais são as dependências do projeto. São os códigos de terceiros que acoplamos ao nosso código.
 
+```
+let - let it change
+const - constante
+```
 
 ## Referências: 
 - [Fonte](https://app.rocketseat.com.br/node/mission-react-js?fbclid=IwAR0QJRwQOXh3XIs9qYirdp_2SW5pn8SKyEpb823zl3h__3h85DmsuNpy6qQ)
