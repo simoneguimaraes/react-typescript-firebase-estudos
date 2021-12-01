@@ -11,6 +11,7 @@
 - [SPA (Single Page Application)](#spa)
 - [TypeScript](#typescript)
 - [Firebase](#firebase)
+- [Projeto](#projeto)
 
 ## <a name="react"></a>ReactJs
 ### Biblioteca JavaScript para criar interfaces de usuário em aplicações front-end.
@@ -172,10 +173,6 @@ import { OutlineButton } from './components/OutlineButton'
 #### A SPA é o index.html
 - É a pagina que recebe todas as informações.
 - A interface da aplicação vai ser construída no Javascript.
-- 
-### Iniciando no React
-- Ferramenta: creat-react-app
-- Comando: sudo yarn create react-app talktome --template typescript
 
 ## <a name="typescript"></a>TypeScript
 - TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.
@@ -210,11 +207,22 @@ showWelcomeMessage({
 }) 
 ```
 
+
 ## <a name="firebase"></a>Firebase
 ### Backend as a Service do Google
-Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco de dados
+- Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco de dados (noSQL)
+- Serve como uma maneira de colocar o projeto no ar de forma rápida
+- [Site](https://console.firebase.google.com/?pli=1)
+- Authentication: Se for adicionar um domínio para o projeto (fazer deploy), mudar as configurações no site.
+- Realtime Database
+- Visão Geral do Projeto: instalar para web
+- Comando: 
+- npm install firebase
+- yarn add firebase
 
 ## <a name="projeto"></a>Projeto
+- Ferramenta: creat-react-app
+- Comando: sudo yarn create react-app talktome --template typescript
 - O arquivo package.json indica quais são as dependências do projeto. São os códigos de terceiros que acoplamos ao nosso código.
 
 ```
