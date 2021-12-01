@@ -1,12 +1,10 @@
-## React, Firebase & TypeScript
+## React, TypeScript & Firebase
 
+Índice
 - [ReactJs](#react)
-- [Firebase](#firebase)
+- [Conceitos do ReactJs](#conceitos-react)
 - [TypeScript](#typescript)
-
-Referências: 
-- [Fonte](https://app.rocketseat.com.br/node/mission-react-js?fbclid=IwAR0QJRwQOXh3XIs9qYirdp_2SW5pn8SKyEpb823zl3h__3h85DmsuNpy6qQ)
-- [Whimsical](https://whimsical.com/): aplicação web para criação de Flowchart
+- [Firebase](#firebase)
 
 ## <a name="react"></a>ReactJs
 ### Biblioteca JavaScript para criar interfaces de usuário em aplicações front-end.
@@ -21,6 +19,60 @@ Referências:
 - Tecnologias: React, Angular, Vue
 - Contém todo o HTML, CSS e JS
 - Vai interagir com o servidor, buscar dados - transformar a estrutura de dados em visualização
+
+## <a name="conceitos-react"></a>Conceitos do ReactJs
+### Componentes
+- Um componente é uma função que devolve um HTML
+- No React, tudo é componente
+- Deixa a aplicação mais simples e fácil do usuário utilizar
+- A Aplicação React (App) também é um compontene
+
+### Named Export (ao invés de Export Default)
+```
+export function Button() {
+  return (
+    <button>Clique Aqui</button>
+  )
+}
+```
+Caso voce altere o nome do componente de 'Button' para 'OutlineButton', a importação no App vai dar erro, o que ajuda a prevenir bugs. 
+```
+import { OutlineButton } from './components/OutlineButton'
+```
+
+### Propriedade
+- A propriedade no JSX funciona como o atributo no HTML.
+- O texto do botão será inserido por meio da propriedade 'text' no componente:
+```
+function App() {
+  return (
+    <div>
+      <Button text="Compre Já"/>
+      <Button text="Clique Aqui"/>
+      <Button text="Saiba Mais"/>
+    </div>
+  )
+}
+```
+
+- Caso tenha vários botões com textos diferentes, voce precisará criar uma tipagem ('type') no componente por causa do TypeScript:
+- As chaves {} executam o código da variável
+```
+type ButtonProps = {
+  text: string 
+}
+export function Button(props: ButtonProps) {
+  return (
+    <button>{props.text}</button>
+  )
+}
+```
+
+### Estado
+
+
+
+
 
 ### SPA (Single Page Application)
 
@@ -39,12 +91,6 @@ Referências:
 ### Iniciando no React
 - Ferramenta: creat-react-app
 - Comando: sudo yarn create react-app talktome --template typescript
-
-
-
-## <a name="firebase"></a>Firebase
-### Backend as a Service do Google
-Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco de dados
 
 ## <a name="typescript"></a>TypeScript
 - TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.
@@ -78,7 +124,15 @@ showWelcomeMessage({
   }
 }) 
 ```
+
+## <a name="firebase"></a>Firebase
+### Backend as a Service do Google
+Fornecer funcionalidades como: autenticação, sistema de gerenciamento de banco de dados
+
 ## <a name="projeto"></a>Projeto
 - O arquivo package.json indica quais são as dependências do projeto. São os códigos de terceiros que acoplamos ao nosso código.
-- 
-- 
+
+
+## Referências: 
+- [Fonte](https://app.rocketseat.com.br/node/mission-react-js?fbclid=IwAR0QJRwQOXh3XIs9qYirdp_2SW5pn8SKyEpb823zl3h__3h85DmsuNpy6qQ)
+- [Whimsical](https://whimsical.com/): aplicação web para criação de Flowchart
